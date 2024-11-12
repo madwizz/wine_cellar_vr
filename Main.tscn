@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://wa3rxayybr4p"]
+
+[ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="1_s6kh0"]
+[ext_resource type="PackedScene" uid="uid://b7sxw2ifk20ct" path="res://Player.tscn" id="2_sk0fb"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_v5om7"]
+sky_top_color = Color(0.663199, 0.187386, 0.75309, 1)
+sky_horizon_color = Color(0.7158, 0.589096, 0.721523, 1)
+ground_horizon_color = Color(0.7158, 0.589096, 0.721523, 1)
+
+[sub_resource type="Sky" id="Sky_iqocd"]
+sky_material = SubResource("ProceduralSkyMaterial_v5om7")
+
+[sub_resource type="Environment" id="Environment_5hifj"]
+background_mode = 2
+sky = SubResource("Sky_iqocd")
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_81hns"]
+albedo_color = Color(0.325441, 0.325441, 0.325441, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_msb6a"]
+material = SubResource("StandardMaterial3D_81hns")
+size = Vector2(10, 10)
+
+[node name="Main" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_5hifj")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="WorldEnvironment"]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="StartXR" parent="." instance=ExtResource("1_s6kh0")]
+
+[node name="XROrigin3D" parent="." instance=ExtResource("2_sk0fb")]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_msb6a")
