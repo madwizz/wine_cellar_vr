@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ixk8g15elwjp"
+uid="uid://kmo4fwtudl5x"
 path="res://.godot/imported/a bottle.glb-e853e01db11e390d8fb352a486b1d0f0.scn"
 
 [deps]
@@ -16,7 +16,7 @@ dest_files=["res://.godot/imported/a bottle.glb-e853e01db11e390d8fb352a486b1d0f0
 nodes/root_type=""
 nodes/root_name=""
 nodes/apply_root_scale=true
-nodes/root_scale=1.0
+nodes/root_scale=0.25
 nodes/import_as_skeleton_bones=false
 meshes/ensure_tangents=true
 meshes/generate_lods=true

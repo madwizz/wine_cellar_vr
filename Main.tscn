@@ -1,12 +1,13 @@
-[gd_scene load_steps=15 format=3 uid="uid://wa3rxayybr4p"]
+[gd_scene load_steps=17 format=3 uid="uid://wa3rxayybr4p"]
 
 [ext_resource type="PackedScene" uid="uid://clc5dre31iskm" path="res://addons/godot-xr-tools/xr/start_xr.tscn" id="1_s6kh0"]
 [ext_resource type="PackedScene" uid="uid://b7sxw2ifk20ct" path="res://Player.tscn" id="2_sk0fb"]
 [ext_resource type="PackedScene" uid="uid://gix84wd4aty4" path="res://Table.tscn" id="3_82jpb"]
 [ext_resource type="PackedScene" uid="uid://c8l60rnugru40" path="res://addons/godot-xr-tools/objects/pickable.tscn" id="4_ynnfg"]
-[ext_resource type="PackedScene" uid="uid://ikjcvlr5pjpg" path="res://assets/ScaledBottle/ScaledBottle.gltf" id="5_1mwj8"]
-[ext_resource type="PackedScene" uid="uid://dox20rcg3ug8a" path="res://assets/ScaledGlass/ScaledGlassTest.glb" id="6_5vroq"]
+[ext_resource type="PackedScene" uid="uid://kmo4fwtudl5x" path="res://assets/bottle/a bottle.glb" id="6_em1mu"]
+[ext_resource type="PackedScene" uid="uid://dldkf8lnguhmb" path="res://assets/wine glass/wine glass.glb" id="7_souuv"]
 [ext_resource type="PackedScene" uid="uid://ce5vb387vm3k2" path="res://assets/cat/cat.fbx" id="7_xq4vc"]
+[ext_resource type="PackedScene" uid="uid://wggr3f7jyt5m" path="res://assets/sawed-off/sawed-off_singular.gltf" id="8_01dlh"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_v5om7"]
 sky_top_color = Color(0.663199, 0.187386, 0.75309, 1)
@@ -28,11 +29,14 @@ albedo_color = Color(0.325441, 0.325441, 0.325441, 1)
 material = SubResource("StandardMaterial3D_81hns")
 size = Vector2(10, 10)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_3eryx"]
-points = PackedVector3Array(-0.101487, 0.0297975, -1.98707e-05, -0.0717639, 0.0297975, 0.071744, -0.101487, 0.512312, -1.98707e-05, -0.0717639, 0.0297975, -0.0717639, -0.0860889, 0, -1.98707e-05, -0.0608761, 0, 0.0608563, -1.98781e-05, 0.0297975, 0.101487, -0.0717639, 0.512312, 0.071744, -0.0717639, 0.512312, -0.0717639, -0.0418225, 0.789712, -1.98707e-05, -1.98781e-05, 0.0297975, -0.101487, -1.98781e-05, 0, -0.0860889, -0.0608761, 0, -0.0608761, -1.98781e-05, 0, 0.086069, 0.0608562, 0, 0.0608563, 0.071744, 0.0297975, 0.071744, -1.98781e-05, 0.512312, 0.101487, -0.0295639, 0.789712, 0.029544, -1.98781e-05, 0.512312, -0.101487, -0.0295639, 0.789712, -0.0295639, -1.98781e-05, 0.789712, -0.0418225, -0.0257094, 0.80532, 0.0256896, -0.0363588, 0.80532, -1.98707e-05, -0.0257094, 0.80532, -0.0257094, 0.071744, 0.0297975, -0.0717639, 0.0608562, 0, -0.0608761, 0.086069, 0, -1.98707e-05, 0.101487, 0.0297975, -1.98707e-05, 0.071744, 0.512312, 0.071744, 0.029544, 0.789712, 0.029544, -1.98781e-05, 0.789712, 0.0417828, -1.98781e-05, 0.80532, 0.0363389, 0.071744, 0.512312, -0.0717639, -1.98781e-05, 0.80532, -0.0363588, 0.0256895, 0.80532, -0.0257094, 0.029544, 0.789712, -0.0295639, 0.101487, 0.512312, -1.98707e-05, 0.0417828, 0.789712, -1.98707e-05, 0.0363389, 0.80532, -1.98707e-05, 0.0256895, 0.80532, 0.0256896)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_0d3aw"]
+points = PackedVector3Array(-0.0405947, 0.011919, -7.94604e-06, -0.0287056, 0.011919, -0.0287056, -0.0344355, 0, -7.94604e-06, -0.0243505, 0, 0.0243425, -0.0287056, 0.011919, 0.0286976, -0.0405947, 0.204925, -7.94604e-06, -7.94604e-06, 0, -0.0344355, -0.0243505, 0, -0.0243504, -0.0287056, 0.204925, -0.0287056, -7.94604e-06, 0.011919, -0.0405947, -7.94604e-06, 0, 0.0344276, -7.94604e-06, 0.011919, 0.0405947, -0.0287056, 0.204925, 0.0286976, -0.016729, 0.315885, -7.94604e-06, 0.0243425, 0, -0.0243504, -7.94604e-06, 0.204925, -0.0405947, -0.0118255, 0.315885, -0.0118255, -7.94604e-06, 0.315885, -0.016729, 0.0286976, 0.011919, -0.0287056, 0.0243425, 0, 0.0243425, 0.0286976, 0.011919, 0.0286976, -7.94604e-06, 0.204925, 0.0405947, -0.0118255, 0.315885, 0.0118176, -0.0102838, 0.322096, 0.0102758, -0.0145435, 0.322096, -7.94604e-06, -0.0102838, 0.322096, -0.0102838, 0.0344276, 0, -7.94604e-06, 0.0286976, 0.204925, -0.0287056, -7.94604e-06, 0.322096, -0.0145435, 0.0102758, 0.322096, -0.0102838, 0.0118176, 0.315885, -0.0118255, 0.0405867, 0.011919, -7.94604e-06, 0.0286976, 0.204925, 0.0286976, 0.0118176, 0.315885, 0.0118176, -7.94604e-06, 0.315885, 0.0167131, -7.94604e-06, 0.322096, 0.0145356, 0.0405867, 0.204925, -7.94604e-06, 0.0145356, 0.322096, -7.94604e-06, 0.0167131, 0.315885, -7.94604e-06, 0.0102758, 0.322096, 0.0102758)
 
-[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_p1thg"]
-points = PackedVector3Array(-1.35675e-05, 0.19589, 0.08, 0.069282, 0.19589, 0.0399843, 0.045017, 0.34635, 0.0259828, -1.35675e-05, 0.34635, 0.0519812, -0.0450306, 0.34635, 0.0259828, -0.069282, 0.19589, 0.0399843, -0.0623511, -1.66709e-09, 0.0359906, -1.35675e-05, -1.66709e-09, 0.0719812, 0.0623375, -1.66709e-09, 0.0359906, 0.069282, 0.19589, -0.0400157, 0.045017, 0.34635, -0.0259984, -0.0450306, 0.34635, -0.0259984, -0.069282, 0.19589, -0.0400157, -0.0623511, -1.66709e-09, -0.0360063, 0.0623375, -1.66709e-09, -0.0360063, -1.35675e-05, 0.19589, -0.08, -1.35675e-05, 0.34635, -0.0519969, -1.35675e-05, -1.66709e-09, -0.0719969)
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_oehe8"]
+points = PackedVector3Array(-6.78003e-06, 0.097945, 0.04, 0.0346342, 0.097945, 0.0199922, 0.0225085, 0.173175, 0.0129914, -6.78003e-06, 0.173175, 0.0259906, -0.0225153, 0.173175, 0.0129914, -0.034641, 0.097945, 0.0199922, -0.0311756, -8.33543e-10, 0.0179953, -6.78003e-06, -8.33543e-10, 0.0359906, 0.0311688, -8.33543e-10, 0.0179953, 0.0346342, 0.097945, -0.0200078, 0.0225085, 0.173175, -0.0129992, -0.0225153, 0.173175, -0.0129992, -0.034641, 0.097945, -0.0200078, -0.0311756, -8.33543e-10, -0.0180031, 0.0311688, -8.33543e-10, -0.0180031, -6.78003e-06, 0.097945, -0.04, -6.78003e-06, 0.173175, -0.0259984, -6.78003e-06, -8.33543e-10, -0.0359984)
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_m1wtu"]
+points = PackedVector3Array(0.0463215, 1.00786, -0.64874, 0.0224978, 1.02371, -0.666588, 0.0519939, 1.00934, -0.682637, 0.108522, 1.00786, -0.64874, 0.0483068, 1.25841, 0.606995, 0.0316267, 1.27818, 0.697205, -1.41989e-05, 1.29131, 0.697205, 0.0202821, 1.04682, -0.641822, 0.0224978, 1.04048, -0.692046, 0.0519939, 1.01794, -0.697995, -0.0131137, 1.32295, 0.697205, -0.0131137, 1.32295, -0.146086, 0.10285, 1.00934, -0.682637, 0.132346, 1.02371, -0.666588, 0.154858, 1.29131, 0.697205, 0.123217, 1.27818, 0.697205, 0.106537, 1.25841, 0.606995, 0.0202821, 1.0732, -0.681669, 0.0519939, 1.08838, -0.712661, 0.0519939, 1.04629, -0.716258, 0.10285, 1.01794, -0.697995, -1.41989e-05, 1.35458, 0.697205, -1.41989e-05, 1.35458, -0.146086, -1.41989e-05, 1.32908, -0.228132, 0.0222496, 1.11945, -0.639331, 0.132346, 1.04048, -0.692046, 0.134561, 1.04682, -0.641822, 0.167975, 1.32295, -0.146086, 0.167957, 1.32295, 0.697205, 0.0519939, 1.14415, -0.667418, 0.10285, 1.08838, -0.712661, 0.10285, 1.04629, -0.716258, 0.0316267, 1.36768, 0.697205, 0.0316267, 1.36772, -0.146086, 0.00893742, 1.34119, -0.228132, 0.0519939, 1.19698, -0.603358, 0.0240754, 1.16658, -0.586617, 0.134561, 1.0732, -0.681669, 0.154858, 1.35458, -0.146086, 0.154858, 1.35458, 0.697205, 0.132576, 1.11945, -0.639331, 0.154858, 1.32908, -0.228132, 0.10285, 1.14415, -0.667418, 0.123217, 1.36768, 0.697205, 0.0772711, 1.36409, -0.219, 0.0621863, 1.36409, -0.210007, 0.0763316, 1.34447, -0.327334, 0.0761898, 1.34098, -0.342969, 0.123217, 1.36772, -0.146086, 0.0527738, 1.23341, -0.531827, 0.10285, 1.19698, -0.603358, 0.145906, 1.34119, -0.228132, 0.13075, 1.16658, -0.586617, 0.0924977, 1.36409, -0.210284, 0.10207, 1.23341, -0.531827)
 
 [node name="Main" type="Node3D"]
 
@@ -53,26 +57,38 @@ mesh = SubResource("PlaneMesh_msb6a")
 [node name="Table" parent="." instance=ExtResource("3_82jpb")]
 transform = Transform3D(-1.74846e-08, 0, -0.4, 0, 0.4, 0, 0.4, 0, -1.74846e-08, 0.0664431, 0.0734992, -0.334426)
 
-[node name="WineBottle" parent="Table" instance=ExtResource("4_ynnfg")]
-transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0.463431, 1.3763, 0.192432)
-
-[node name="ScaledBottle" parent="Table/WineBottle" instance=ExtResource("5_1mwj8")]
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Table/WineBottle"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_3eryx")
-
-[node name="WineGlass" parent="Table" instance=ExtResource("4_ynnfg")]
-transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0.437618, 1.38789, -0.111381)
-
-[node name="ScaledGlassTest" parent="Table/WineGlass" instance=ExtResource("6_5vroq")]
-
-[node name="CollisionShape3D2" type="CollisionShape3D" parent="Table/WineGlass"]
-transform = Transform3D(1, 0, -3.55271e-15, 0, 1, 0, 3.55271e-15, 0, 1, 0, 0, 0)
-shape = SubResource("ConvexPolygonShape3D_p1thg")
-
 [node name="cat" parent="Table" instance=ExtResource("7_xq4vc")]
 transform = Transform3D(-0.119203, 0, -0.160595, 0, 0.2, 0, 0.160595, 0, -0.119203, 0.290517, 1.37104, -0.747478)
 
-[editable path="Table/WineBottle/ScaledBottle"]
-[editable path="Table/WineGlass/ScaledGlassTest"]
+[node name="WineBottle" parent="." instance=ExtResource("4_ynnfg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.184948, 0.630436, -0.1268)
+
+[node name="a bottle" parent="WineBottle" instance=ExtResource("6_em1mu")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WineBottle"]
+shape = SubResource("ConvexPolygonShape3D_0d3aw")
+
+[node name="WineGlass" parent="." instance=ExtResource("4_ynnfg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0372918, 0.657379, -0.0707975)
+
+[node name="wine glass" parent="WineGlass" instance=ExtResource("7_souuv")]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="WineGlass"]
+shape = SubResource("ConvexPolygonShape3D_oehe8")
+
+[node name="SawedOff" parent="." instance=ExtResource("4_ynnfg")]
+transform = Transform3D(-0.999922, 0, -0.0124787, 0, 1, 0, 0.0124787, 0, -0.999922, 0.0966184, 0.346364, -0.143061)
+
+[node name="sawed-off_singular" parent="SawedOff" instance=ExtResource("8_01dlh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0372954, 0, -0.0560492)
+
+[node name="handle" parent="SawedOff/sawed-off_singular" index="0"]
+transform = Transform3D(0.288559, 0, 0, 0, 0.288559, 0, 0, 0, 0.288559, 0, -3.57628e-08, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="SawedOff"]
+transform = Transform3D(0.288559, 0, 0, 0, 0.288559, 0, 0, 0, 0.288559, -0.0372954, -2.98023e-08, -0.0560492)
+shape = SubResource("ConvexPolygonShape3D_m1wtu")
+
+[editable path="WineBottle/a bottle"]
+[editable path="WineGlass/wine glass"]
+[editable path="SawedOff/sawed-off_singular"]
