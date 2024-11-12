@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dpoxgmo2i3rrg"
-path.s3tc="res://.godot/imported/catskin.png-c5c7fcfff5e2579d4cc0233fade2b08c.s3tc.ctex"
+path.s3tc="res://.godot/imported/catskin.png-e1211dce065075fa590d4116d43cf9cf.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/cat/catskin.png"
-dest_files=["res://.godot/imported/catskin.png-c5c7fcfff5e2579d4cc0233fade2b08c.s3tc.ctex"]
+source_file="res://assets/Cat/catskin.png"
+dest_files=["res://.godot/imported/catskin.png-e1211dce065075fa590d4116d43cf9cf.s3tc.ctex"]
 
 [params]
 

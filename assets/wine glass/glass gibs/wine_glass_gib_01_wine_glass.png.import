@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://54pji4pg3v28"
-path.s3tc="res://.godot/imported/wine_glass_gib_01_wine_glass.png-3c87e2ff87e3497ca0e8a8cfed9eedb1.s3tc.ctex"
+path.s3tc="res://.godot/imported/wine_glass_gib_01_wine_glass.png-a87999e70ceb6d3dd0a859b7307247ce.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://assets/wine glass/glass gibs/wine_glass_gib_01_wine_glass.png"
-dest_files=["res://.godot/imported/wine_glass_gib_01_wine_glass.png-3c87e2ff87e3497ca0e8a8cfed9eedb1.s3tc.ctex"]
+source_file="res://assets/Wine Glass/glass gibs/wine_glass_gib_01_wine_glass.png"
+dest_files=["res://.godot/imported/wine_glass_gib_01_wine_glass.png-a87999e70ceb6d3dd0a859b7307247ce.s3tc.ctex"]
 
 [params]
 

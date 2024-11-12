@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dopiya5lhurhe"
-path="res://.godot/imported/table.blend-5cc70ebe3157a4f5af52ad1baf47244b.scn"
+path="res://.godot/imported/table.blend-dcfc179de8cca1c4a10a318aa4b5f261.scn"
 
 [deps]
 
-source_file="res://assets/table/table.blend"
-dest_files=["res://.godot/imported/table.blend-5cc70ebe3157a4f5af52ad1baf47244b.scn"]
+source_file="res://assets/Table/table.blend"
+dest_files=["res://.godot/imported/table.blend-dcfc179de8cca1c4a10a318aa4b5f261.scn"]
 
 [params]
 

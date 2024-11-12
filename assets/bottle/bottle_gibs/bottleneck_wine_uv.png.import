@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b5ioqjoolcmbv"
-path.s3tc="res://.godot/imported/bottleneck_wine_uv.png-94732f9be51fd7ab1b2bfe32f5342606.s3tc.ctex"
+path.s3tc="res://.godot/imported/bottleneck_wine_uv.png-9f030e60ddade61c3084eeb8e744c71f.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://assets/bottle/bottle_gibs/bottleneck_wine_uv.png"
-dest_files=["res://.godot/imported/bottleneck_wine_uv.png-94732f9be51fd7ab1b2bfe32f5342606.s3tc.ctex"]
+source_file="res://assets/Bottle/bottle_gibs/bottleneck_wine_uv.png"
+dest_files=["res://.godot/imported/bottleneck_wine_uv.png-9f030e60ddade61c3084eeb8e744c71f.s3tc.ctex"]
 
 [params]
 

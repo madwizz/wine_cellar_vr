@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://kmo4fwtudl5x"
-path="res://.godot/imported/a bottle.glb-e853e01db11e390d8fb352a486b1d0f0.scn"
+path="res://.godot/imported/a bottle.glb-913f179c43b47ec24b85ddcf031c0740.scn"
 
 [deps]
 
-source_file="res://assets/bottle/a bottle.glb"
-dest_files=["res://.godot/imported/a bottle.glb-e853e01db11e390d8fb352a486b1d0f0.scn"]
+source_file="res://assets/Bottle/a bottle.glb"
+dest_files=["res://.godot/imported/a bottle.glb-913f179c43b47ec24b85ddcf031c0740.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bfnyeqsx6q027"
-path="res://.godot/imported/b_gib_01.glb-b2df555dc1689ed42cfdbc2b60379bf8.scn"
+path="res://.godot/imported/b_gib_01.glb-ecb54ec91c1b176a18508f38c179f778.scn"
 
 [deps]
 
-source_file="res://assets/bottle/bottle_gibs/b_gib_01.glb"
-dest_files=["res://.godot/imported/b_gib_01.glb-b2df555dc1689ed42cfdbc2b60379bf8.scn"]
+source_file="res://assets/Bottle/bottle_gibs/b_gib_01.glb"
+dest_files=["res://.godot/imported/b_gib_01.glb-ecb54ec91c1b176a18508f38c179f778.scn"]
 
 [params]
 

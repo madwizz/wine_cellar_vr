@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dqnms1utdaw1w"
-path.s3tc="res://.godot/imported/wine_uv_n_n.png-e83755e34f9cd69e543a4129429540cc.s3tc.ctex"
+path.s3tc="res://.godot/imported/wine_uv_n_n.png-d6e195f996151d3f8acd663e969ebd71.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/bottle/wine_uv_n_n.png"
-dest_files=["res://.godot/imported/wine_uv_n_n.png-e83755e34f9cd69e543a4129429540cc.s3tc.ctex"]
+source_file="res://assets/Bottle/wine_uv_n_n.png"
+dest_files=["res://.godot/imported/wine_uv_n_n.png-d6e195f996151d3f8acd663e969ebd71.s3tc.ctex"]
 
 [params]
 

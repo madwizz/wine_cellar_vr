@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b3m1bu2o0jhlb"
-path="res://.godot/imported/wine glass.blend-33fa2838d2342260c9506c63708e11e8.scn"
+path="res://.godot/imported/wine glass.blend-f1271676d240b8bb0feb025a537cc2a7.scn"
 
 [deps]
 
-source_file="res://assets/wine glass/wine glass.blend"
-dest_files=["res://.godot/imported/wine glass.blend-33fa2838d2342260c9506c63708e11e8.scn"]
+source_file="res://assets/Wine Glass/wine glass.blend"
+dest_files=["res://.godot/imported/wine glass.blend-f1271676d240b8bb0feb025a537cc2a7.scn"]
 
 [params]
 

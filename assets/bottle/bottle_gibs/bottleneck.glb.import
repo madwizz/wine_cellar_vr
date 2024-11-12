@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cq48cb6yaqsyk"
-path="res://.godot/imported/bottleneck.glb-708bea824d9c64f99f822f71879ca86f.scn"
+path="res://.godot/imported/bottleneck.glb-d4a32ac2586690d2b18d6f9e290497fc.scn"
 
 [deps]
 
-source_file="res://assets/bottle/bottle_gibs/bottleneck.glb"
-dest_files=["res://.godot/imported/bottleneck.glb-708bea824d9c64f99f822f71879ca86f.scn"]
+source_file="res://assets/Bottle/bottle_gibs/bottleneck.glb"
+dest_files=["res://.godot/imported/bottleneck.glb-d4a32ac2586690d2b18d6f9e290497fc.scn"]
 
 [params]
 
