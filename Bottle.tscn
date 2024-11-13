@@ -1,0 +1,38 @@
+[gd_scene load_steps=11 format=3 uid="uid://bjxf6q2mbcjsc"]
+
+[ext_resource type="Script" path="res://addons/godot-xr-tools/objects/pickable.gd" id="1_tp87o"]
+[ext_resource type="PackedScene" uid="uid://kmo4fwtudl5x" path="res://assets/Bottle/a bottle.glb" id="2_frqmp"]
+[ext_resource type="PackedScene" uid="uid://c25yxb0vt53vc" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_left.tscn" id="3_uec4f"]
+[ext_resource type="Animation" uid="uid://dqa0h82y3qn1t" path="res://addons/godot-xr-tools/hands/animations/left/Grip 1.res" id="4_o3qth"]
+[ext_resource type="Script" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="5_i3uvc"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="6_sqb4q"]
+[ext_resource type="Animation" uid="uid://daqddcrbpam0c" path="res://addons/godot-xr-tools/hands/animations/right/Grip 1.res" id="7_jiwq1"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_w3y1g"]
+points = PackedVector3Array(-0.0507434, 0.0148987, -9.93535e-06, -0.035882, 0.0148987, -0.0358819, -0.0430444, 0, -9.93535e-06, -0.0304381, 0, 0.0304281, -0.035882, 0.0148987, 0.035872, -0.0507434, 0.256156, -9.93535e-06, -9.93907e-06, 0, -0.0430444, -0.0304381, 0, -0.0304381, -0.035882, 0.256156, -0.0358819, -9.93907e-06, 0.0148987, -0.0507433, -9.93907e-06, 0, 0.0430345, -9.93907e-06, 0.0148987, 0.0507433, -0.035882, 0.256156, 0.035872, -0.0209113, 0.394856, -9.93535e-06, 0.0304281, 0, -0.0304381, -9.93907e-06, 0.256156, -0.0507433, -0.0147819, 0.394856, -0.0147819, -9.93907e-06, 0.394856, -0.0209113, 0.035872, 0.0148987, -0.0358819, 0.0304281, 0, 0.0304281, 0.035872, 0.0148987, 0.035872, -9.93907e-06, 0.256156, 0.0507433, -0.0147819, 0.394856, 0.014772, -0.0128547, 0.40266, 0.0128448, -0.0181794, 0.40266, -9.93535e-06, -0.0128547, 0.40266, -0.0128547, 0.0430345, 0, -9.93535e-06, 0.0507433, 0.0148987, -9.93535e-06, 0.035872, 0.256156, -0.0358819, -9.93907e-06, 0.40266, -0.0181794, 0.0128448, 0.40266, -0.0128547, 0.014772, 0.394856, -0.0147819, 0.035872, 0.256156, 0.035872, 0.014772, 0.394856, 0.014772, -9.93907e-06, 0.394856, 0.0208914, -9.93907e-06, 0.40266, 0.0181695, 0.0507433, 0.256156, -9.93535e-06, 0.0181695, 0.40266, -9.93535e-06, 0.0208914, 0.394856, -9.93535e-06, 0.0128448, 0.40266, 0.0128448)
+
+[sub_resource type="Resource" id="Resource_bpohg"]
+script = ExtResource("5_i3uvc")
+closed_pose = ExtResource("4_o3qth")
+
+[sub_resource type="Resource" id="Resource_g4cyw"]
+script = ExtResource("5_i3uvc")
+closed_pose = ExtResource("7_jiwq1")
+
+[node name="Bottle" type="RigidBody3D"]
+script = ExtResource("1_tp87o")
+
+[node name="Model" parent="." instance=ExtResource("2_frqmp")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_w3y1g")
+
+[node name="GrabPointHandLeft" parent="." instance=ExtResource("3_uec4f")]
+transform = Transform3D(0.961535, 0, 0.274681, 0.0491843, 0.983838, -0.172172, -0.270242, 0.17906, 0.945995, -0.0220162, 0.39946, -0.068602)
+hand_pose = SubResource("Resource_bpohg")
+
+[node name="GrabPointHandRight" parent="." instance=ExtResource("6_sqb4q")]
+transform = Transform3D(1, 0, 0, 0, 0.974894, -0.222672, 0, 0.222672, 0.974894, 0, 0.401508, -0.0727646)
+hand_pose = SubResource("Resource_g4cyw")
+
+[editable path="Model"]

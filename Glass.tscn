@@ -1,0 +1,28 @@
+[gd_scene load_steps=8 format=3 uid="uid://c1d0ufsqfhlbu"]
+
+[ext_resource type="Script" path="res://addons/godot-xr-tools/objects/pickable.gd" id="1_f20k0"]
+[ext_resource type="PackedScene" uid="uid://dldkf8lnguhmb" path="res://assets/Wine Glass/wine glass.glb" id="2_a86ov"]
+[ext_resource type="PackedScene" uid="uid://ctw7nbntd5pcj" path="res://addons/godot-xr-tools/objects/grab_points/grab_point_hand_right.tscn" id="3_cwoh7"]
+[ext_resource type="Animation" uid="uid://ca21ej1p3g2yt" path="res://addons/godot-xr-tools/hands/animations/right/Pinch Tight.res" id="4_hffvr"]
+[ext_resource type="Script" path="res://addons/godot-xr-tools/hands/poses/hand_pose_settings.gd" id="5_6502j"]
+
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_h3qj6"]
+points = PackedVector3Array(-8.47876e-06, 0.122431, 0.05, 0.0433013, 0.122431, 0.0249902, 0.0281356, 0.216469, 0.0162392, -8.47876e-06, 0.216469, 0.0324883, -0.0281441, 0.216469, 0.0162392, -0.0433013, 0.122431, 0.0249902, -0.0389694, -1.04193e-09, 0.0224941, -8.47876e-06, -1.04193e-09, 0.0449882, 0.038961, -1.04193e-09, 0.0224941, 0.0433013, 0.122431, -0.0250098, 0.0281356, 0.216469, -0.016249, -0.0281441, 0.216469, -0.016249, -0.0433013, 0.122431, -0.0250098, -0.0389694, -1.04193e-09, -0.0225039, 0.038961, -1.04193e-09, -0.0225039, -8.47876e-06, 0.122431, -0.05, -8.47876e-06, 0.216469, -0.032498, -8.47876e-06, -1.04193e-09, -0.044998)
+
+[sub_resource type="Resource" id="Resource_2hjl5"]
+script = ExtResource("5_6502j")
+closed_pose = ExtResource("4_hffvr")
+
+[node name="Glass" type="RigidBody3D"]
+script = ExtResource("1_f20k0")
+
+[node name="Model" parent="." instance=ExtResource("2_a86ov")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("ConvexPolygonShape3D_h3qj6")
+
+[node name="GrabPointHandRight" parent="." instance=ExtResource("3_cwoh7")]
+transform = Transform3D(0.861691, 0, 0.507433, 0, 1, 0, -0.507433, 0, 0.861691, 0.0125579, 0.117416, -0.0758938)
+hand_pose = SubResource("Resource_2hjl5")
+
+[editable path="Model"]
